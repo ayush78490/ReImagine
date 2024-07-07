@@ -194,12 +194,6 @@ nav i {
 }
 
 
-@media (max-width: 760px){
-    nav i{
-        
-    }
-}
-
 :root {
 	--cards: 4;
 	--cardHeight: 87vh;
