@@ -10,3 +10,16 @@ VANTA.BIRDS({
     color1: 0x1c00a2,
     color2: 0x77ff
   })
+
+  var tl = gsap.timeline({scrollTrigger:{
+    trigger: "#firstCard",
+    start: "0% 90%",
+    end: "50% 50%",
+    scrub: "true",
+    markers: true
+  }})
+
+  tl.to("#firstCard",{
+    top: "115%",
+    left: "5%"
+  })
