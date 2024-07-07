@@ -71,6 +71,15 @@ nav i {
     height: auto;
     z-index: 2;
 }
+.HeroImg span{
+    position: absolute;
+    bottom: -50px;
+    background: transparent;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
 .text {
     position: relative;
     top: 20vh;
@@ -184,6 +193,12 @@ nav i {
     src: url(/fonts/Product\ Sans\ Bold.ttf);
 }
 
+
+@media (max-width: 760px){
+    nav i{
+        
+    }
+}
 
 :root {
 	--cards: 4;
