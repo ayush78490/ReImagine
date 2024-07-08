@@ -59,28 +59,8 @@ nav i {
     height: 100vh;
 }
 
-.HeroImg{ 
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.185);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    position: relative;
-    left: 55vw;
-    width: 35vw;
-    height: auto;
-    z-index: 2;
-}
-.HeroImg span{
-    position: absolute;
-    bottom: -50px;
-    background: transparent;
-    border-radius: 50%;
-    pointer-events: none;
-    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
-}
 
-.text {
+.Headtext {
     position: relative;
     top: 20vh;
     left: 10vw;
@@ -92,7 +72,7 @@ nav i {
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Hide overflow */
 }
-#text::after{
+#Headtext::after{
     content: "";
     left: 0;
     position:absolute;
@@ -103,7 +83,7 @@ nav i {
 }
 
 
-#text:hover::after{
+#Headtext:hover::after{
     animation-name: lineanime;
     animation-duration: 2s;
 }
@@ -178,7 +158,107 @@ nav i {
     from { width: 0 }
     to { width: 100% }
   }
+/* Heroo section slider starts */
 
+/* Slideshow container */
+.slideshow-container {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.185);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 0 0 30px 0 rgb(0, 136, 255);
+    position: relative;
+    left: 70vw;
+    width: 20vw;
+    height: auto;
+    z-index: 2;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    height: fit-content;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    position: relative;
+    left: 30vw;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/* Hero section slider Ends */
 
 
   /*Product section style starts  */
